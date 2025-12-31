@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StyleStep | Fashion Store</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+}
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* NAVBAR */
+nav {
+    background: #ff2f6d;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: white;
+    color: black;
+}
+
+/* SECTION */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 260px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 5px 0;
+}
+
+.price {
+    color: #ff2f6d;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buy {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buy:hover {
+    background: #ff2f6d;
+}
+
+/* OFFER */
+.offer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.offer h2 {
+    color: #ff7eb3;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>StyleStep</h1>
+    <p>Clothes & Shoes That Upgrade Your Style</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Clothes</a>
+    <a href="#">Shoes</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Be Stylish. Be Confident.</h2>
+    <p>Premium Fashion Collection for Everyone</p>
+    <button>Shop Now</button>
+</div>
+
+<div class="section">
+    <h2>Trending Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" />
+            <div class="card-content">
+                <h3>Fashion Hoodie</h3>
+                <p class="price">₹1499</p>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" />
+            <div class="card-content">
+                <h3>Stylish Sneakers</h3>
+                <p class="price">₹2199</p>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" />
+            <div class="card-content">
+                <h3>Trendy Outfit</h3>
+                <p class="price">₹1799</p>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f" />
+            <div class="card-content">
+                <h3>Cool Shoes</h3>
+                <p class="price">₹2499</p>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="offer">
+    <h2>🔥 Special Offer 🔥</h2>
+    <p>Flat 30% OFF on first order</p>
+    <p>Limited Time Only!</p>
+</div>
+
+<footer>
+    <p>© 2025 StyleStep | Designed with ❤️ by Shru</p>
+</footer>
+
+</body>
+</html>
